@@ -14,13 +14,16 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import fr.akharroub.universite.note.domain.Note;
 
 
 
 @Entity
 @Table(name="t_etudiant")
-
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Etudiant implements Serializable{
 
 	/**
@@ -53,6 +56,7 @@ public class Etudiant implements Serializable{
 	@Column(name="photo")
 	private String photo;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy="etudiant")
 	private List<Note> notes;
 

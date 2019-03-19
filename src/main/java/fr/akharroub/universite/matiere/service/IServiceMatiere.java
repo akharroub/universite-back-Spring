@@ -13,5 +13,7 @@ public interface IServiceMatiere {
 	public Matiere ajouterMatiere(Matiere matiere);
 	
 	public Matiere modifierMatiere(Matiere matiere);
+	
+	public void supprimerMatiere(Integer id);
 
 }

@@ -13,5 +13,7 @@ public interface IControllerMatiere {
 	public Matiere save(Matiere matiere);
 	
 	public Matiere update(Matiere matiere, Integer id);
+	
+	public void delete(Integer id);
 
 }

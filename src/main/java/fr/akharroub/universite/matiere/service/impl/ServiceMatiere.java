@@ -39,4 +39,10 @@ public class ServiceMatiere implements IServiceMatiere{
 		return mt;
 	}
 
+	@Override
+	public void supprimerMatiere(Integer id) {
+		serviceMatiere.deleteById(id);
+		
+	}
+
 }

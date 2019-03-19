@@ -11,7 +11,7 @@
 	<groupId>fr.akharroub.universite</groupId>
 	<artifactId>universite-back-akharroub</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>universite-back</name>
+	<name>universite-back-akharroub</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
